@@ -1,0 +1,145 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ultra&display=swap" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- css -->
+  <link rel="stylesheet" href="/static/Autism.css">
+  <style>
+    body {
+      background-color: rgb(77, 77, 158);
+    }
+  </style>
+
+
+
+  <title>Autism Prediction</title>
+  <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <br><br>
+  <nav style="background-color: yellowgreen;" class="
+    navbar navbar-light navbar-expand-lg
+    fixed-top
+    bg-white
+    clean-navbar
+    ">
+
+    <div class="container">
+      <a class="navbar-brand logo" href="#">Brain Stroke Prediction</a><button data-bs-toggle="collapse"
+        class="navbar-toggler" data-bs-target="#navcol-1">
+        <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navcol-1">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/abstract">Abstract</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contactus">Contact Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+  <header>
+    <h1 style="margin-left: 700px; color: blue;">Brain Stroke</h1>
+
+  </header>
+
+  <br>
+
+  <div class="container" style="margin-left: 570px;">
+    <form action="/predict" method="post">
+
+      <label style="margin-left: 8px; font-size: 22px;">Gender:</label>
+      <select name="Gender" id="Gender" style="margin-left: 119px;">
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+      </select>
+      <br><label style="margin-left: 3px; font-size: 22px;">Age:</label>
+      <input type="text" name="SCORE" placeholder="Age" required="required" style="margin-left: 165px;">
+      <br><label style="font-size: 22px;">hypertension:</label>
+      <select name="Hypertension" id="Hypertension" style="margin-left: 64px;">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <br><label style="font-size: 22px;">heart_disease:</label>
+      <select name="Heart_Disease" id="Heart_Disease" style="margin-left: 58px;">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+      <br><label style="font-size: 22px;">ever_married:</label>
+      <select name="Marriage_Status" id="Marriage_Status" style="margin-left: 62px;">
+        <option value="1">Married</option>
+        <option value="0">Unmarried</option>
+      </select>
+      <br><label style="font-size: 22px;">work_type:</label>
+      <select name="Work_Type" id="Work_Type" style="margin-left: 90px;">
+        <option value="2">Private</option>
+        <option value="1">Governament Job</option>
+        <option value="3">Self-employed</option>
+        <option value="0">Children</option>
+      </select>
+      <br><label style="font-size: 22px;">Residence_type:</label>
+      <select name="Residence" id="Residence" style="margin-left: 33px;">
+        <option value="0">Rural</option>
+        <option value="1">Urban</option>
+      </select>
+      <br><label style="font-size: 22px;">avg_glucose_level:</label>
+      <input type="text" name="Depression" placeholder="avg_glucose_level" required="required"
+        style="margin-left: 12px;">
+      <br><label style="font-size: 22px;">body_mass_index:</label>
+      <input type="text" name="intellectual_disability" placeholder="body_mass_index" required="required"
+        style="margin-left: 12px;">
+      <br><label style="font-size: 22px;">smoking_status:</label>
+      <select name="Smoking_Status" id="Smoking_Status" style="margin-left: 33px;">
+        <option value="0">Formerly smoked</option>
+        <option value="1">Never smoked</option>
+        <option value="2">Smokes</option>
+        <option value="3">Unknown</option>
+      </select>
+      <br><br>
+      <button type="submit" class="btn btn-outline-warning"
+        style="margin-left: 290px; background-color: blue;color: white;">Predict</button>
+
+
+    </form>
+
+
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
